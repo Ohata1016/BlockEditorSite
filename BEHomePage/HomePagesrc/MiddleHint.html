@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<!--Designed by kitta-->
+<!--http://kitta.jf.land.to/-->
+<!--001-----07/06/25-->
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="wiki.cgi?action=RSS">
+
+
+		
+			<link rel="stylesheet" type="text/css" href="./theme/FixMenu/FixMenu.css">
+		
+<!--[if lt IE 7]> 
+<link rel="stylesheet" type="text/css" href="./theme/FixMenu/FixMenu.cssIE.css">
+<![endif]-->
+		
+<p><a href="http://ohata1016.github.com/BlockEditorSite/BEHomePage">目次</a></p>
+		 <title>関数の宣言と利用</title>
+	</head>
+
+<body>
+	<div id="overhead">
+		<div class="overheadin">
+
+			<h1>中間課題ヒント</h1>
+			<br clear="all" style="height:0;">
+
+		</div>
+	</div>
+	<div class="main">
+		<div class="cont">
+			<div class="body">
+				<div class="section">
+					<h2>csvファイルからデータを取り出す</h2>
+					<!--csvローダーを使えば出来るよ-->	
+					<h3>準備</h3>
+						<p>講義ページから、CSVLoader.javaをダウンロードし、中間課題のプロジェクトの中に入れてください。</p>
+							<p><img src="../img/Middle/CopyCSVLoader.png"  border='0' style='width:60%' /><br>
+							</p>							
+						<p>中間課題用のjavaファイルを作成し、作成したファイルを開いた状態でブロックエディタを起動してください。</p>
+						
+						
+					<h3>データを取り出す</h3>
+						<h4>CSVLoader型の変数を定義する</h4>
+							<p>ブロックエディタの右側にある、Project-Objectsというファクトリをクリックし、「CSVLoader型のローカル変数を作り、...」というブロックを取り出してください。</p>
+							<p><img src="../img/Middle/AccessCSVLoader.png"  border='0' style='width:60%' /><br>
+							</p>	
+						
+							<p>ローカル変数定義ブロックを取り出してください。ローカル変数定義ブロックを右クリックすると、CSVLoaderというカテゴリが出てきます。これをマウスオーバーすると、利用可能なメソッドが表示されます。</p>
+							<p><img src="../img/Middle/AccessCSVLoader.png"  border='0' style='width:60%' /><br>
+							</p>	
+						<h4>csvファイルから行データを取り出す</h4>
+							<p>CSVLoader型の変数定義ブロックを右クリックし、「csvファイルから行データを取り出す」をクリックします。</p>
+							<p>作成したブロックの一番外側の黒いブロックを外します。</p>
+							<p><img src="../img/Middle/LoadCSVRow.png"  border='0' style='width:60%' /><br>
+							</p>
+						
+							<p>「csvファイルから行データを取り出す」というブロックのpathというところに、読み込むcsvファイルのパスを、lineNumというところに読み込みたい行の番号のブロックを結合してください。</p>
+							<p><img src="../img/Middle/PathSetting.png"  border='0' style='width:60%' /><br>
+							</p>					
+							
+							<p>String[]型のローカル変数定義ブロックに、先ほどのブロックを結合します。</p>
+							<p><img src="../img/Middle/SubRowDate.png"  border='0' style='width:60%' /><br>
+							</p>					
+							
+							<p>取り出したcsvファイルのデータを実際にコンソールに表示します。以下の例では、csvファイルから取り出した列の0番目の要素を表示します。</p>
+							<p><img src="../img/Middle/RowDateDisplayTest.png"  border='0' style='width:60%' /><br>
+							</p>						
+							
+							<p>BlockからJavaに変換し、プログラムを実行します。csvファイルの指定した行データがコンソールに表示されることが確認できればデータの取り出しに成功しています。</p>
+							<p><img src="../img/Middle/RowDateTestDisp2.png"  border='0' style='width:60%' /><br>
+							</p>								
+							
+							<p>コンソールに表示されない場合は、csvファイルへのパスが間違っていないか確認してください。</p>
+						<h4>csvファイルから列データを取り出す</h4>
+							<p>CSVLoader型の変数定義ブロックを右クリックし、「csvファイルから列データを取り出す」をクリックします。</p>									
+							<p>作成したブロックの一番外側の黒いブロックを外して「csvファイルから列データを取り出す」というブロックのpathというところに、読み込むcsvファイルのパスを、lineNumというところに読み込みたい行の番号のブロックを結合してください。</p>
+							<p><img src="../img/Middle/GetCSVColumnMethod.png"  border='0' style='width:60%' /><br>
+							</p>								
+							
+							<p>処理の確認用に、読み込んだ値をコンソールに出力します。コンソールに出力するブロックに結合し、Javaに変換します。</p>
+							<p><img src="../img/Middle/GetColumnTest.png"  border='0' style='width:60%' /><br>
+							</p>								
+
+							<p>プログラムを実行します。csvファイルの指定した列データがコンソールに表示されることが確認できればデータの取り出しに成功しています。</p>
+							<p><img src="../img/Middle/GetColumnTest2.png"  border='0' style='width:60%' /><br>
+							</p>	
+							
+							<p>コンソールに表示されない場合は、csvファイルへのパスが間違っていないか確認してください。</p>
+							
+							
+																	
+<p><a href="http://ohata1016.github.com/BlockEditorSite/BEHomePage">目次</a></p>
+
+  
+</div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+</body></html>
