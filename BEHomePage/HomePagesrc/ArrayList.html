@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<!--Designed by kitta-->
+<!--http://kitta.jf.land.to/-->
+<!--001-----07/06/25-->
+	<head>
+		
+
+		
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="wiki.cgi?action=RSS">
+
+
+		
+			<link rel="stylesheet" type="text/css" href="./theme/FixMenu/FixMenu.css">
+		
+<!--[if lt IE 7]> 
+<link rel="stylesheet" type="text/css" href="./theme/FixMenu/FixMenu.cssIE.css">
+<![endif]-->
+		
+<p><a href="http://ohata1016.github.com/BlockEditorSite/BEHomePage">目次</a></p>
+<p><a href="Method.html">&lt;&lt;メソッド（関数）の宣言</a>　 <a href="ProjectVariables.html">同一プロジェクト内のクラスを変数として利用する&gt;&gt;</a></p>
+		 <title>配列の利用</title>
+	</head>
+
+<body>
+	<div id="overhead">
+		<div class="overheadin">
+
+			<h1>リストを利用する</h1>
+			<br clear="all" style="height:0;">
+
+		</div>
+	</div>
+	<div class="main">
+		<div class="cont">
+			<div class="body">
+				<div class="section">
+					<h2>Listの宣言</h2>
+						<h3>Listブロックの格納場所</h3>
+							<p>Listブロックはファクトリの「配列・リスト」から取り出すことができます．List,ArrayList,LinkedListが利用できます．例として，ArrayListで説明を行います．</p>
+							<p><img src="../img/List/ListFactry.png"  border='0' style='width:60%' /><br>
+							</p>
+						<h3>Listの宣言</h3>
+							<p>ローカル変数同様に，取り出してブロックを結合することで宣言することができます．この際，「新しくArrayListを作る」と書かれたブロックの右側に，宣言するListの型を指定します．下の例ではString型の配列を宣言しています．</p>
+							<p><img src="../img/List/ListDecl.png"  border='0' style='width:60%' /><br>
+							</p>
+											
+					<h2>リストへの要素の追加と削除</h2>
+						<h3>リストへの要素の追加</h3>
+							<p>リストへ要素を追加するには，リストクラスの持つメソッドを通じて要素の追加を行う必要があります．</p>
+							<p>リストの変数宣言ブロックを右クリックし，Listと書かれたメニューをマウスオーバーします．</p>
+							<p>すると，ArrayListクラスの利用可能なメソッドが表示されます．この中から，「要素を追加する」をクリックします．</p>
+							<p><img src="../img/List/ListMethodAccess.png"  border='0' style='width:60%' /><br>
+							
+							<p>この作成されたブロックの「追加する」と書かれたブロックに，追加する要素の値ブロックを結合します．</p>
+							<p>次の例では，String型の要素をもつArrayListに対して，"Aさん"という要素を追加しています．
+							
+							<p><img src="../img/List/ADD.png"  border='0' style='width:60%' /><br>
+							
+							<p>追加した要素は，0番目から順番にリストに追加されていきます．</p>
+							
+						<h3>リストの要素の取り出し</h3>
+							<p>リストに追加した要素は，要素の追加時同様に．メソッドを通じて取り出すことができます．</p>
+							<p>リストへの要素の追加を行う際には，リストの変数宣言ブロックを右クリックし，ArrayListと書かれたメニューをマウスオーバーします．</p>
+							<p>すると，ArrayListクラスの利用可能なメソッドが表示されます．この中から，「x番目の要素取得」をクリックします．</p>
+							
+							<p><img src="../img/List/GetAccess.png"  border='0' style='width:60%' /><br>
+							
+							<p>この作成されたブロックの「要素を取り出す」と書かれたブロックに，取り出す要素の番地の値を結合します．</p>
+							<p>例えば，リストへの要素の追加で追加したString型の要素を取り出すには，次のようにします．</p>
+							
+							<p><img src="../img/List/Get.png"  border='0' style='width:60%' /><br>
+							
+							<p>最後にここまでの結果をJavaに変換したコードを以下に示します．add("Aさん")が「要素を追加する」	，get(0)が「x番目の要素取得」に対応しています．</p>
+							
+							<p><img src="../img/List/SourceCode.png"  border='0' style='width:60%' /><br>
+										
+						<h3>その他</h3>
+							<p>その他，リストではリストに追加された要素の数を取得することや，追加要素をすべて削除することなどができます．</p>
+							<p>利用可能なメソッドは，ブロックを右クリックして参照してください．</p>
+						
+				<p><a href="Method.html">&lt;&lt;メソッド（関数）の宣言</a>　 <a href="ProjectVariables.html">同一プロジェクト内のクラスを変数として利用する&gt;&gt;</a></p>
+				<p><a href="../index.html">目次</a></p>
+
+				</div>
+			</div>
+		<div style="clear: both"></div>
+	</div>
+</body></html>
