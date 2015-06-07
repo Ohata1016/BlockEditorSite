@@ -45,12 +45,12 @@
 						
 					<h3>データを取り出す</h3>
 						<h4>CSVLoader型の変数を定義する</h4>
-							<p>ブロックエディタの右側にある、Project-Objectsというファクトリをクリックし、「CSVLoader型のローカル変数を作り、...」というブロックを取り出してください。</p>
+							<p>ブロックエディタの右側にある、自作クラス型変数の定義というファクトリをクリックし、「CSVLoader型の変数を作り、...」というブロックを取り出してください。</p>
 							<p><img src="../img/Middle/AccessCSVLoader.png"  border='0' style='width:60%' /><br>
 							</p>	
 						
 							<p>ローカル変数定義ブロックを取り出してください。ローカル変数定義ブロックを右クリックすると、CSVLoaderというカテゴリが出てきます。これをマウスオーバーすると、利用可能なメソッドが表示されます。</p>
-							<p><img src="../img/Middle/AccessCSVLoader.png"  border='0' style='width:60%' /><br>
+							<p><img src="../img/Middle/AccessCSVLoaderMethod.png"  border='0' style='width:60%' /><br>
 							</p>	
 						<h4>csvファイルから行データを取り出す</h4>
 							<p>CSVLoader型の変数定義ブロックを右クリックし、「csvファイルから行データを取り出す」をクリックします。</p>
@@ -58,7 +58,7 @@
 							<p><img src="../img/Middle/LoadCSVRow.png"  border='0' style='width:60%' /><br>
 							</p>
 						
-							<p>「csvファイルから行データを取り出す」というブロックのpathというところに、読み込むcsvファイルのパスを、lineNumというところに読み込みたい行の番号のブロックを結合してください。</p>
+							<p>「csvファイルから行データを取り出す」というブロックのファイルへの物理パスというところに、読み込むcsvファイルのパスを、読み取る行数というところに読み込みたい行の番号のブロックを結合してください。</p>
 							<p><img src="../img/Middle/PathSetting.png"  border='0' style='width:60%' /><br>
 							</p>					
 							
@@ -77,7 +77,7 @@
 							<p>コンソールに表示されない場合は、csvファイルへのパスが間違っていないか確認してください。</p>
 						<h4>csvファイルから列データを取り出す</h4>
 							<p>CSVLoader型の変数定義ブロックを右クリックし、「csvファイルから列データを取り出す」をクリックします。</p>									
-							<p>作成したブロックの一番外側の黒いブロックを外して「csvファイルから列データを取り出す」というブロックのpathというところに、読み込むcsvファイルのパスを、lineNumというところに読み込みたい行の番号のブロックを結合してください。</p>
+							<p>作成したブロックの一番外側の黒いブロックを外して「csvファイルから列データを取り出す」というブロックのファイルへの物理パスというところに、読み込むcsvファイルのパスを、読み取る列数というところに読み込みたい行の番号のブロックを結合してください。</p>
 							<p><img src="../img/Middle/GetCSVColumnMethod.png"  border='0' style='width:60%' /><br>
 							</p>								
 							
